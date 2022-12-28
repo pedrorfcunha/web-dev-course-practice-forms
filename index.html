@@ -65,9 +65,9 @@
         <section>
           <div>
             <ul>
-              <li>
+              <li class="checkbox">
                 <input
-                  type="checkbox"
+                  type="radio"
                   name="reply"
                   id="reply-call"
                   value="call"
@@ -75,9 +75,9 @@
                 />
                 <label for="reply-call">Call me</label>
               </li>
-              <li>
+              <li class="checkbox">
                 <input
-                  type="checkbox"
+                  type="radio"
                   name="reply"
                   id="reply-email"
                   value="email"
@@ -85,9 +85,9 @@
                 />
                 <label for="reply-email">Send me an email</label>
               </li>
-              <li>
+              <li class="checkbox">
                 <input
-                  type="checkbox"
+                  type="radio"
                   name="reply"
                   id="reply-dont"
                   value="dont"
@@ -97,7 +97,7 @@
               </li>
             </ul>
           </div>
-          <div>
+          <div class="checkbox" id="terms">
             <input
               type="checkbox"
               name="accept-terms"
@@ -107,9 +107,9 @@
             <label for="acceptterms">Accept terms</label>
           </div>
         </section>
-        <section>
-            <button type="reset">Clear</button>
-            <button type="submit">Submit</button>
+        <section id="btn-section">
+            <button type="reset" id="btn-clear">Clear</button>
+            <button type="submit" id="btn-submit">Submit</button>
         </section>
       </form>
     </main>

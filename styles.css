@@ -1,0 +1,103 @@
+body {
+  background-color: rgb(240, 249, 255);
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  background-color: rgb(235, 241, 245);
+  margin: 30px auto;
+  width: 40rem;
+  border-radius: 6px;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+label {
+  margin-bottom: 0.25rem;
+  display: block;
+  color: rgb(26, 26, 26);
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  display: block;
+  margin-bottom: 0.5rem;
+  box-sizing: border-box;
+  font: inherit;
+  border: 1px solid rgba(17, 17, 17, 0.451);
+  border-radius: 2px;
+  padding: 0.25rem;
+  color: rgb(61, 58, 58);
+}
+
+textarea {
+  resize: none;
+}
+
+input:focus,
+textarea:focus {
+  background-color: rgb(179, 208, 243);
+  color: rgb(52, 44, 114);
+  border-color: rgb(198, 191, 255);
+}
+
+#terms {
+  margin: 10px auto;
+}
+
+#btn-section {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+}
+
+button {
+  font: inherit;
+  border: 1px solid rgb(32, 5, 63);
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#btn-clear {
+  color: rgb(32, 5, 63);
+}
+
+#btn-submit {
+  background-color: rgb(32, 5, 63);
+  color: white;
+}
+
+#btn-clear:hover {
+  background-color: rgb(208, 224, 235);
+}
+
+#btn-submit:hover {
+  background-color: rgb(75, 33, 123);
+}
+.checkbox {
+  display: flex;
+}
+
+.checkbox input {
+  width: auto;
+  margin-right: 0.5rem;
+}
