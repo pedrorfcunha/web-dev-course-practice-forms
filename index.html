@@ -3,7 +3,115 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Contact form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Oswald:wght@700&family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body></body>
+  <body>
+    <h1>Contact us</h1>
+    <main>
+      <form action="/" method="get">
+        <h2>How can we help you?</h2>
+        <section>
+          <ul>
+            <li>
+              <label for="username">Your name</label>
+              <input type="text" name="user-name" id="username" required />
+            </li>
+            <li>
+              <label for="emailaddress">Your e-mail address</label>
+              <input
+                type="email"
+                name="email-address"
+                id="emailaddress"
+                required
+              />
+            </li>
+            <li>
+              <label for="phonenumber">Your phone number</label>
+              <input
+                type="number"
+                name="phone-number"
+                id="phonenumber"
+                required
+              />
+            </li>
+            <li>
+              <label for="textmessage">Your message</label>
+              <textarea
+                name="text-message"
+                id="textmessage"
+                cols="30"
+                rows="6"
+                required
+              ></textarea>
+            </li>
+            <li>
+              <label for="findus">How did you find us?</label>
+              <select name="find-us" id="findus">
+                <option value="web-search">Web search</option>
+                <option value="social-media">Social media</option>
+                <option value="friends">Friends</option>
+              </select>
+            </li>
+          </ul>
+        </section>
+        <h2>How should we reply</h2>
+        <section>
+          <div>
+            <ul>
+              <li>
+                <input
+                  type="checkbox"
+                  name="reply"
+                  id="reply-call"
+                  value="call"
+                  required
+                />
+                <label for="reply-call">Call me</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  name="reply"
+                  id="reply-email"
+                  value="email"
+                  required
+                />
+                <label for="reply-email">Send me an email</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  name="reply"
+                  id="reply-dont"
+                  value="dont"
+                  required
+                />
+                <label for="reply-dont">Don't reply</label>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name="accept-terms"
+              id="acceptterms"
+              required
+            />
+            <label for="acceptterms">Accept terms</label>
+          </div>
+        </section>
+        <section>
+            <button type="reset">Clear</button>
+            <button type="submit">Submit</button>
+        </section>
+      </form>
+    </main>
+  </body>
 </html>
