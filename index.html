@@ -13,7 +13,9 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>Contact us</h1>
+    <header>
+      <h1>Contact us</h1>
+    </header>
     <main>
       <form action="/" method="get">
         <h2>How can we help you?</h2>
@@ -35,10 +37,11 @@
             <li>
               <label for="phonenumber">Your phone number</label>
               <input
-                type="number"
+                type="tel"
                 name="phone-number"
                 id="phonenumber"
                 required
+                minlength="5"
               />
             </li>
             <li>
@@ -49,11 +52,13 @@
                 cols="30"
                 rows="6"
                 required
+                minlength="10"
+                maxlength="200"
               ></textarea>
             </li>
             <li>
               <label for="findus">How did you find us?</label>
-              <select name="find-us" id="findus">
+              <select name="find-us" id="findus" required>
                 <option value="web-search">Web search</option>
                 <option value="social-media">Social media</option>
                 <option value="friends">Friends</option>
@@ -61,55 +66,53 @@
             </li>
           </ul>
         </section>
-        <h2>How should we reply</h2>
+        <h2>How should we reply?</h2>
         <section>
-          <div>
-            <ul>
-              <li class="checkbox">
-                <input
-                  type="radio"
-                  name="reply"
-                  id="reply-call"
-                  value="call"
-                  required
-                />
-                <label for="reply-call">Call me</label>
-              </li>
-              <li class="checkbox">
-                <input
-                  type="radio"
-                  name="reply"
-                  id="reply-email"
-                  value="email"
-                  required
-                />
-                <label for="reply-email">Send me an email</label>
-              </li>
-              <li class="checkbox">
-                <input
-                  type="radio"
-                  name="reply"
-                  id="reply-dont"
-                  value="dont"
-                  required
-                />
-                <label for="reply-dont">Don't reply</label>
-              </li>
-            </ul>
-          </div>
-          <div class="checkbox" id="terms">
-            <input
-              type="checkbox"
-              name="accept-terms"
-              id="acceptterms"
-              required
-            />
-            <label for="acceptterms">Accept terms</label>
-          </div>
+          <ul>
+            <li class="inline-control">
+              <input
+                type="radio"
+                name="reply"
+                id="reply-call"
+                value="call"
+                required
+              />
+              <label for="reply-call">Call me</label>
+            </li>
+            <li class="inline-control">
+              <input
+                type="radio"
+                name="reply"
+                id="reply-email"
+                value="email"
+                required
+              />
+              <label for="reply-email">Send me an email</label>
+            </li>
+            <li class="inline-control">
+              <input
+                type="radio"
+                name="reply"
+                id="reply-dont"
+                value="dont"
+                required
+              />
+              <label for="reply-dont">Don't reply</label>
+            </li>
+          </ul>
+        </section>
+        <section class="inline-control">
+          <input
+            type="checkbox"
+            name="accept-terms"
+            id="acceptterms"
+            required
+          />
+          <label for="acceptterms">Accept terms</label>
         </section>
         <section id="btn-section">
-            <button type="reset" id="btn-clear">Clear</button>
-            <button type="submit" id="btn-submit">Submit</button>
+          <button type="reset" id="btn-clear">Clear</button>
+          <button type="submit" id="btn-submit">Submit</button>
         </section>
       </form>
     </main>

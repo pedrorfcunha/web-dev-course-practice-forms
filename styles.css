@@ -1,18 +1,23 @@
 body {
-  background-color: rgb(240, 249, 255);
+  background-color: rgb(236, 252, 253);
   font-family: "Roboto", sans-serif;
 }
 
 main {
-  background-color: rgb(235, 241, 245);
-  margin: 30px auto;
+  background-color: rgb(246, 250, 255);
+  margin: auto;
   width: 40rem;
   border-radius: 6px;
-  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+section {
+  margin-bottom: 1rem;
 }
 
 h1 {
   text-align: center;
+  margin: 2rem;
 }
 
 ul {
@@ -29,9 +34,9 @@ form {
 }
 
 label {
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.5rem 0;
   display: block;
-  color: rgb(26, 26, 26);
+  color: rgb(66, 76, 97);
 }
 
 input,
@@ -42,10 +47,10 @@ select {
   margin-bottom: 0.5rem;
   box-sizing: border-box;
   font: inherit;
-  border: 1px solid rgba(17, 17, 17, 0.451);
-  border-radius: 2px;
-  padding: 0.25rem;
-  color: rgb(61, 58, 58);
+  border: 1px solid rgb(152, 159, 184);
+  border-radius: 4px;
+  padding: 0.5rem;
+  color: rgb(66, 76, 97);
 }
 
 textarea {
@@ -54,50 +59,45 @@ textarea {
 
 input:focus,
 textarea:focus {
-  background-color: rgb(179, 208, 243);
-  color: rgb(52, 44, 114);
-  border-color: rgb(198, 191, 255);
-}
-
-#terms {
-  margin: 10px auto;
-}
-
-#btn-section {
-    display: flex;
-    justify-content: flex-end;
-    gap: 0.5rem;
-}
+  background-color: rgb(217, 227, 247);
+  }
 
 button {
   font: inherit;
-  border: 1px solid rgb(32, 5, 63);
+  border: 1px solid rgb(51, 67, 100);
   padding: 0.5rem 1.5rem;
   border-radius: 4px;
   cursor: pointer;
 }
 
+#btn-section {
+    text-align: right;
+  }
+
 #btn-clear {
-  color: rgb(32, 5, 63);
+  color: rgb(51, 67, 100);
+  background-color: transparent;
 }
 
 #btn-submit {
-  background-color: rgb(32, 5, 63);
+  background-color: rgb(51, 67, 100);
   color: white;
 }
 
 #btn-clear:hover {
-  background-color: rgb(208, 224, 235);
+  background-color: rgb(208, 215, 230);
 }
 
 #btn-submit:hover {
-  background-color: rgb(75, 33, 123);
+  background-color: rgb(69, 89, 129);
+  border-color: rgb(69, 89, 129);
 }
-.checkbox {
+
+.inline-control {
   display: flex;
 }
 
-.checkbox input {
+.inline-control input {
   width: auto;
   margin-right: 0.5rem;
 }
